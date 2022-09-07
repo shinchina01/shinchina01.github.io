@@ -207,3 +207,84 @@
 .star-field .layer:nth-child(3) {
     animation: sf-fly-by-3 5s linear infinite;
 }
+
+/*Responsive Website*/
+@media only screen and (max-width: 650px) {
+    html{
+        font-size: 90%;
+    }
+    .allth .box .card{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 590px) {
+    .allth .box .card .multi .tips ul a{
+        font-size: 90%;
+    }
+    .allth .box .card{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .allth .box .card .multi .tips ul a{
+        font-size: 80%;
+    }
+    .allth .box .card{
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .allth .box .card .multi .tips ul a{
+        font-size: 80%;
+    }
+    .allth .box .card{
+        margin-top: 3rem;
+    }
+    .allth .box .card .multi .tips{
+        padding-left: 0.5rem;
+        padding-top: 2rem;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .allth .box .card .multi .tips ul a{
+        font-size: 70%;
+    }
+    .allth .box .card{
+        margin-top: 3rem;
+    }
+    .allth .box .card .multi .tips{
+        padding-left: 0.5rem;
+        padding-top: 2rem;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .allth .box .card .multi .tips ul a{
+        font-size: 70%;
+    }
+    .content{
+        margin-top: 3rem;
+    }
+    .allth .box .card .multi .tips{
+        padding-left: 0.5rem;
+        padding-top: 2rem;
+    }
+    .allth .box .card{
+        margin-top: 4rem;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .header h1{
+        padding-top: 1.5rem;
+        font-size: 120%;
+    }
+    .allth .box .card .multi .tips ul a{
+        font-size: 60%;
+    }
+    .allth .box .card .multi .tips{
+        padding-left: 0.5rem;
+        padding-top: 2rem;
+    }
+    .allth .box .card{
+        margin-top: 3rem;
+    }
+}
