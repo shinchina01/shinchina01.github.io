@@ -51,14 +51,12 @@
     align-items: center;
     gap: .2rem;
 }
-.content h3::after {
+.content h3::after{
     content: "";
     width: .4rem;
     height: 1.1rem;
     background-color: #24d71b;
     display: inline-block;
-}
-.content h3::after {
     animation: cursor-blink .7s infinite;
 }
 .allth .box{
@@ -70,8 +68,7 @@
 .allth .box .card{
     display: block;
     width: 90%;
-    height: 115rem;
-    border: 0.1rem solid #197914;
+    height: auto;
     margin-top: 2%;
     margin-left: 50%;
     transform: translate(-50%);
@@ -218,8 +215,8 @@
         font-size: 90%;
     }
     .allth .header h1{
-        font-size: 3rem;
-        padding-top: 2rem;
+        font-size: 2.7rem;
+        padding-top: 0.7rem;
     }
     .allth .box .card .join{
         padding-left: 2rem;
@@ -236,44 +233,139 @@
     }
 }
 @media only screen and (max-width:745px) {
+    .allth .box .card .join .para .poc1{
+        width: 40rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .poc{
+        width: 15rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .bc{
+        width: 40rem;
+        border-radius: 0.7rem;
+    }
+    
+}
+@media only screen and (max-width:745px) {
     html{
-        font-size: 60%;
+        font-size: 80%;
+    }
+    .allth .header h1{
+        font-size: 2.5rem;
+        padding-top: 1rem;
     }
     .allth .box .card .join{
         padding-left: 1rem;
     }
-    .allth .box .card{
-        height: 117rem;
+    .allth .box .card .heading1{
+        font-size: 0.7rem;
     }
 }
 @media only screen and (max-width:570px) {
     html{
-        font-size: 50%;
-    }
-    .allth .box .card{
-        height: 120rem;
+        font-size: 80%;
     }
     .allth .header h1{
-        font-size: 4rem;
-        padding-top: 1rem;
+        font-size: 2.3rem;
+        padding-top: 1.2rem;
     }
-    
+    .allth .box .card .heading1{
+        font-size: 0.5rem;
+    }
+    .allth .box .card .join .para .poc1{
+        width: 30rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .poc{
+        width: 15rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .bc{
+        width: 30rem;
+        border-radius: 0.7rem;
+    }
+    .allth .content .dollar{
+        font-size: 10px;
+    }
 }
 @media only screen and (max-width:470px) {
     html{
-        font-size: 40%;
+        font-size: 80%;
+    }
+}
+@media only screen and (max-width:450px) {
+    html{
+        font-size: 80%;
+    }
+    .allth .content h3{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:420px) {
+    html{
+        font-size: 80%;
+    }
+    .allth .content h3{
+        font-size: 0.8rem;
+        margin-top: 3rem;
+    }
+    .allth .box .card .join .para .poc1{
+        width: 25rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .poc{
+        width: 15rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .bc{
+        width: 25rem;
+        border-radius: 0.7rem;
+    }
+    .allth .header .back i{
+        font-size: 25px !important;
+        padding-top: 0.5rem;
     }
 }
 @media only screen and (max-width:390px) {
     html{
-        font-size: 30%;
+        font-size: 80%;
     }
     .allth .header h1{
-        padding-top: 3rem;
+        font-size: 2rem;
+        padding-top: 1.2rem;
+    }
+    .allth .box .card .heading1{
+        font-size: 0.7rem;
     }
 }
-@media only screen and (max-width:340px) {
+@media only screen and (max-width:360px) {
     html{
-        font-size: 27%;
+        font-size: 70%;
     }
+    .allth .header h1{
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+    .allth .content h3{
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+    .allth .box .card .join .para .poc1{
+        width: 20rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .poc{
+        width: 10rem;
+        border-radius: 0.7rem;
+    }
+    .allth .box .card .join .para .bc{
+        width: 20rem;
+        border-radius: 0.7rem;
+    }
+}
+@media only screen and (max-width:310px) {
+    html{
+        font-size: 60%;
+    }    
 }
