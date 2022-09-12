@@ -90,8 +90,8 @@
   }
   .bg:before {
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 160%;
+    height: 160%;
     background: #000;
     position: fixed;
     z-index: -1;
@@ -139,7 +139,7 @@
     -webkit-perspective: 600px;
     z-index: -1;
   }
-  /*secret code: y84c6b583465c643 (submit at https://twitter.com/shinchina_ DM)*/
+  /*secret code: y84c6b583465c643 (i paste this secret code here and forgot, if you found this please submit to https://twitter.com/shinchina_ dm.)*/
   .star-field .layer {
     box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,
         524px -237px #f0f0f0, 679px -535px #e3e3e3, 158px 399px #ededed, 157px 249px #ededed, 81px -450px #ebebeb, 719px -360px #c2c2c2, -499px 473px #e8e8e8, -158px -349px #d4d4d4, 870px -134px #cfcfcf, 446px 404px #c2c2c2,
@@ -153,7 +153,7 @@
         -598px -50px #c2c2c2, -833px 187px #c4c4c4, 378px 325px whitesmoke, -703px 375px #d6d6d6, 392px 520px #d9d9d9, -492px -60px #c4c4c4, 759px 288px #ebebeb, 98px -412px #c4c4c4, -911px -277px #c9c9c9;
     transform-style: preserve-3d;
     position: absolute;
-    zoom: 300%;
+    zoom: 200%;
     top: 50%;
     left: 50%;
     height: 4px;
