@@ -100,12 +100,6 @@ body{
     border-radius: 0.7rem;
 }
 
-@keyframes cursor-blink {
-    0% {
-      opacity: 0;
-    }
-}
-
 /*Responsive Website*/
 @media only screen and (max-width:1045px) {
     html{
