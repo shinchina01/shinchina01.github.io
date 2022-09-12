@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif
 }
+body{
+    background-color: #0a1201;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .one{
     width: 70%;
     height: 90%;
