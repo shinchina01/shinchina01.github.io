@@ -1,49 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Comfortaa:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="styles/pointer.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/83284e997d.js" crossorigin="anonymous"></script>
-    <title>shinchina</title>
-</head>
-<body>
-<!--backgroud effect-->
-<!--     <div class="bg"></div>
-    <div class="star-field">
-    <div class="layer"></div>
-    <div class="layer"></div>
-    <div class="layer"></div> -->
-<!--Main Content-->
-    <div class="one">
-        <img class="image" src="images/img.png">
-        <h1>shinchina</h1>
-        <p class="bio">Indian🇮🇳<br>bug hunter<br><br>" I will have a great Aim<br>I will continously acquire knowledge<br>I will do Hardwork<br>I will persieve here and succeed" <br></p>
-        <div class="social">
-            <a href="https://twitter.com/shinchina_" target="_blank"><i class="fa-brands fa-twitter" style="font-size:42px;color:#ffffff;"></i></a>
-            <span></span>
-            <a href="https://instagram.com/shinchina_" target="_blank"><i class="fa-brands fa-hashtag" style="font-size:42px;color:#ffffff;"></i></a>
-            <span></span>
-            <a href="mailto:contact.shin01@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="font-size:42px;color:#ffffff;"></i></a>
-        </div>
-        <div class="blog"><a href="https://shinchina01.github.io/blog/index.html" class="text">blog</a></div>
-    </div>
-<!--scripts-->
-    <script src="js/pointer.js"></script>
-    <script>
-        init_pointer({
-		pointerColor: "white",
-		ringSize: 16,
-		ringClickSize: 10
-	})
-    </script>
-</body>
-</html>
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Varela Round';
+}
+body{
+    background-color: #0a1201;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    color: #FFFFFF;
+}
+.main .dp{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+}
+.main h1{
+    margin-top: 0.7rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.main p{
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.main .social{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    pointer-events: all;
+}
+.main .social span{
+    margin: 1rem;
+}
+.main .blog{
+    margin-top: 1.3rem;
+    color: #FFFFFF;
+    height: auto;
+}
+.main .blog a{
+    pointer-events: all;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/*responsive website*/
+@media only screen and (max-width: 470px) {
+    html{
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    html{
+        font-size: 85%;
+    }
+}
