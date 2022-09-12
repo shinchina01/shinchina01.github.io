@@ -3,7 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Varela Round', sans-serif
+    font-family: 'Varela Round';
 }
 body{
     background-color: #000000;
@@ -143,7 +143,7 @@ body{
         padding-left: 1rem;
     }
     .allth .box .card .heading1{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .allth h3{
         margin-left: 2.3rem;
@@ -157,7 +157,7 @@ body{
         font-size: 80%;
     }
     .allth .box .card .heading1{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
     }
     .allth .box .card .join .para .poc1{
         width: 30rem;
@@ -228,7 +228,7 @@ body{
         font-size: 80%;
     }
     .allth .box .card .heading1{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .allth h3{
         margin-left: 1rem;
@@ -240,7 +240,14 @@ body{
 }
 @media only screen and (max-width:360px) {
     html{
-        font-size: 70%;
+        font-size: 75%;
+    }
+    .allth h3{
+        margin-left: 1rem;
+        font-size: 0.8rem
+    }
+    .allth .box .card .heading1{
+        font-size: 0.7rem;
     }
     .allth .box .card .join .para .poc1{
         width: 20rem;
@@ -260,9 +267,9 @@ body{
 }
 @media only screen and (max-width:310px) {
     html{
-        font-size: 60%;
+        font-size: 67%;
     }    
     .allth .header h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 }
