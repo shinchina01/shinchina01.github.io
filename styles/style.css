@@ -3,7 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Varela Round', sans-serif
+    font-family: 'Varela Round';
 }
 body{
     background-color: #0a1201;
