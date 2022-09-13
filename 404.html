@@ -16,9 +16,35 @@ permalink: 404.html
   <body>
     <style>
       body{
-        background-color: #0a1201;
+        overflow: hidden;
+        background-color: #0b1202;
+      }
+      .image{
+        width: 100vw;
+        height: 100vh;
+      }
+      .content{
+        width: 90%;
+        height: 90%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .content img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translate(0%,-50%);
       }
     </style>
-    <h2 style="color: #ffffff;">iamlost, mujhe <a href="https://shinchina.in" style="color:#ffffff;">ghar</a> jana hai</h2>
+    <div class="image">
+      <div class="content">
+        <a href="https://shinchina.in"><img src="/images/ghar.jpeg"></a>
+      </div>
+    </div>
   </body>
+</html>
 </html>
