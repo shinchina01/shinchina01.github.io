@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #000000;
+}
+.footerline{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    transition: 0.1s;
+    left: 50%;
+    transform: translate(-50%);
+}
+.footer a{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer .home-logo, .blog-logo, .video-logo, .success-logo{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.footer .home-logo{
+    width: 3.9rem;
+}
+.footer .blog-logo{
+    width: 3rem;
+    background-color: #ee3612;
+    border-radius: 50%;
+}
+.footer .video-logo{
+    width: 3.7rem;
+}
+.footer .success-logo{
+    width: 4.1rem;
+}
+.footer span{
+	left: 0;
+	display: block;
+	color: #ffffff;
+	font-size: 0.7rem;
+	text-decoration: none;
+    text-transform: lowercase;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+.footer .home-logo:hover+span, .blog-logo:hover+span, .video-logo:hover+span, .success-logo:hover+span{
+    opacity: 1;
+}
+.footer .home-logo:hover, .blog-logo:hover, .video-logo:hover, .success-logo:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.second{
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+}
+.allth{
+    background-color: transparent;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    color: #ffffff;
+    width: 100vw;
+    height: 5vh;
+    margin-top: 0.7rem;
+}
+.allth .header .back{
+    color: #ffffff;
+    font-size: 1.8rem;
+    position: absolute;
+    width: 7vw;
+    height: 5vh;
+    text-align: center;
+    text-decoration: none;
+}
+.header h1{
+    color: #ffffff;
+    width: 100%;
+    height: 7vh;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+h3{
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #24d71b;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    margin-top: 4rem;
+}
+.allth .box{
+    display: inline;
+    position: relative;
+}
+.allth .box .card{
+    display: block;
+    width: 90%;
+    height: 60%;
+    border: 0.1rem solid #197914;
+    margin-top: 1%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.allth .box .card p{
+    font-family: 'Courier New', Courier, monospace !important;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+.allth .box .card span{
+    height: 0.1rem;
+    width: 100%;
+    background-color: #197914;
+    position: fixed;
+    margin-top: 0.5rem;
+}
+.allth .box .multi{
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.allth .box .multi .tips{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.allth .box .multi .tips ul{
+    color: #27dd1d;
+    list-style-type: square;
+    list-style-position: inside;
+}
+.allth .box .multi .tips ul a{
+    font-family: 'Courier New', Courier, monospace !important;
+    text-decoration: none;
+    color: #27dd1d;
+}
+
+
+
+
+/*responsive website*/
+@media screen and (max-width: 1024px){
+    .footer{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    .allth .box .multi .tips{
+        padding-left: 2rem;
+    }
+}
+@media screen and (max-width: 620px){
+    .allth .box .multi .tips{
+        padding-left: 1rem;
+        padding-top: 2rem;
+    }
+}
+@media screen and (max-width: 580px){
+    .footer{
+        width: 60%;
+    }
+    .allth .box .multi .tips{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 520px){
+    .allth .box .multi .tips{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer{
+        width: 80%;
+    }
+    .allth .box .multi .tips{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 415px){
+    .allth .box .multi .tips{
+        font-size: 0.9rem;
+        padding-left: 0.5rem;
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .footer{
+        width: 85%;
+    }
+    .allth .box .multi .tips{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 330px){
+    .allth .box .multi .tips{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 300px){
+    .allth .box .multi .tips{
+        font-size: 0.56rem;
+    }
+}
