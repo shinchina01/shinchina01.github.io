@@ -3,68 +3,153 @@
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Varela Round';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    background-color: #0a1201;
+    background-color: #000000;
 }
-.main{
-    width: 100vw;
+.footerline{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    transition: 0.1s;
+    left: 50%;
+    transform: translate(-50%);
+}
+.footer a{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer .home-logo, .blog-logo, .video-logo, .success-logo{
+    width: 2rem;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.footer span{
+	left: 0;
+	display: block;
+	color: #ffffff;
+	font-size: 0.7rem;
+	text-decoration: none;
+    text-transform: lowercase;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+.footer .home-logo:hover+span, .blog-logo:hover+span, .video-logo:hover+span, .success-logo:hover+span{
+    opacity: 1;
+}
+.footer .home-logo:hover, .blog-logo:hover, .video-logo:hover, .success-logo:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.first{
     height: 100vh;
+    width: 100vw;
+    color: #ffffff;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     align-items: center;
     justify-content: center;
     pointer-events: none;
-    color: #FFFFFF;
 }
-.main .dp{
+.om{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.om .aum{
+    width: 3rem;
+}
+.first .dp{
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
 }
-.main h1{
+.first h1{
     margin-top: 0.7rem;
     text-transform: uppercase;
     font-size: 2.5rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
-.main p{
+.first p{
+    font-size: 1.3rem;
     margin-top: 0.7rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    margin-bottom: 0.7rem;
 }
-.main .social{
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+.first a{
     pointer-events: all;
 }
-.main .social span{
-    margin: 1rem;
-}
-.main .blog{
+.first .twitter{
     margin-top: 1.3rem;
-    color: #FFFFFF;
-    height: auto;
+    width: 3rem;
 }
-.main .blog a{
-    pointer-events: all;
-    cursor: pointer;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-size: 2rem;
+.first .mail{
+    margin-left: 1.3rem;
+    margin-top: 1.3rem;
+    width: 3rem;
+}
+.first .telegram{
+    margin-left: 1.3rem;
+    margin-top: 1.3rem;
+    width: 3rem;
 }
 
+
+
+
+
 /*responsive website*/
-@media only screen and (max-width: 470px) {
+@media screen and (max-width: 1024px){
+    .footer{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 580px){
+    .footer{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 375px){
     html{
         font-size: 90%;
     }
-}
-@media only screen and (max-width: 300px) {
-    html{
-        font-size: 85%;
+    .footer{
+        width: 85%;
     }
 }
