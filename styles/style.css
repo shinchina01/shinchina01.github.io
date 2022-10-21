@@ -39,15 +39,24 @@ body{
     text-transform: uppercase;
 }
 .footer .home-logo, .blog-logo, .video-logo, .success-logo{
-    width: 3rem;
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 .footer .home-logo{
+    width: 3rem;
     background-color: #1798FF;
     border-radius: 50%;
+}
+.footer .blog-logo{
+    width: 3rem;
+}
+.footer .video-logo{
+    width: 3.7rem;
+}
+.footer .success-logo{
+    width: 4.1rem;
 }
 .footer span{
 	left: 0;
